@@ -111,7 +111,7 @@ setup(
     
     
     url=URL,
-    #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 
@@ -120,7 +120,7 @@ setup(
     # },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
-    #include_package_data=True,
+    include_package_data=True,
     license='MIT',
     classifiers=[
         # Trove classifiers
