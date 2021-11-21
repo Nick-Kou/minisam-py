@@ -18,7 +18,7 @@ URL = 'https://github.com/Nick-Kou/minisam-py.git'
 EMAIL = 'nkourtza@ryerson.ca'
 AUTHOR = 'Nikolaos Kourtzanidis'
 REQUIRES_PYTHON = '==3.7'
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
