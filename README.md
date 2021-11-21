@@ -1,2 +1,2 @@
-# minisam_py
+# minisampy
 Python wrapper for minisam and sophus with additional functionality.
