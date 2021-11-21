@@ -106,7 +106,7 @@ setup(
                    'minisampy.sophus': here+'/minisampy/sophus'},
     
     #package_data={'minisampy': [here+'/minisampy', 'libminisam*', 'minisam*'],
-                    'minisampy.sophus': [here+'/minisampy/sophus']},
+                    #'minisampy.sophus': [here+'/minisampy/sophus']},
     package_data={'minisampy': ["*.so"],
                     'minisampy.sophus': ["*.so"]},
     #python_requires=REQUIRES_PYTHON,
