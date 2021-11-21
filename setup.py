@@ -18,7 +18,7 @@ URL = 'https://github.com/Nick-Kou/minisampy.git'
 EMAIL = 'nkourtza@ryerson.ca'
 AUTHOR = 'Nikolaos Kourtzanidis'
 REQUIRES_PYTHON = '==3.7'
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -105,13 +105,15 @@ setup(
     package_dir={'minisampy': here+'/minisampy',
                    'minisampy.sophus': here+'/minisampy/sophus'},
     
-    package_data={'minisampy': [here+'/minisampy', 'libminisam*', 'minisam*'],
-                    'minisampy.sophus': [here+'/minisampy/sophus']},             
+    #package_data={'minisampy': [here+'/minisampy', 'libminisam*', 'minisam*'],
+                    'minisampy.sophus': [here+'/minisampy/sophus']},
+    package_data={'minisampy': ["*.so"],
+                    'minisampy.sophus': ["*.so"]},
     #python_requires=REQUIRES_PYTHON,
     
     
     url=URL,
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 
@@ -120,7 +122,7 @@ setup(
     # },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
-    include_package_data=True,
+    #include_package_data=True,
     license='MIT',
     classifiers=[
         # Trove classifiers
