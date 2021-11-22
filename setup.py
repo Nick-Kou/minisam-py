@@ -107,13 +107,14 @@ setup(
     
     #package_data={'minisampy': [here+'/minisampy', 'libminisam*', 'minisam*'],
                     #'minisampy.sophus': [here+'/minisampy/sophus']},
-    #package_data={'minisampy': ["*.so"],
-                    #'minisampy.sophus': ["*.so"]},
+    
     #python_requires=REQUIRES_PYTHON,
     
     
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    package_data={'minisampy': ["*.so"],
+                    'minisampy.sophus': ["*.so"]},
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 
