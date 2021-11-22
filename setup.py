@@ -18,7 +18,7 @@ URL = 'https://github.com/Nick-Kou/minisampy.git'
 EMAIL = 'nkourtza@ryerson.ca'
 AUTHOR = 'Nikolaos Kourtzanidis'
 REQUIRES_PYTHON = '==3.7'
-VERSION = '0.0.8'
+VERSION = '0.0.9'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -113,8 +113,8 @@ setup(
     
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
-    package_data={'minisampy': ["*.so"],
-                    'minisampy.sophus': ["*.so"]},
+    package_data={'minisampy': ['libminisam.so', '_minisam_py_wrapper.cpython-37m-x86_64-linux-gnu.so'],
+                    'minisampy.sophus': ['_minisam_sophus_py_wrapper.cpython-37m-x86_64-linux-gnu.so']},
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 
